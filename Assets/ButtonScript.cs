@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
@@ -46,9 +47,9 @@ public class ButtonScript : MonoBehaviour
 
     void exit()
     {
-        Debug.Log("make this return to scene main_menu");
-        
-       // CanvasObject.GetComponent<Canvas>().enabled = false;
+        SceneManager.LoadScene("main_menu");
+
+        // CanvasObject.GetComponent<Canvas>().enabled = false;
     }
 
 
